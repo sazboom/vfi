@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem "haml-rails"
 gem 'devise'
+gem 'rails_admin'
+gem 'bootstrap-sass', '~> 2.3.1.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
