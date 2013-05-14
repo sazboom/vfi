@@ -11,6 +11,8 @@ gem "haml-rails"
 gem 'devise'
 gem 'rails_admin'
 gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'annotate'
+gem "nifty-generators", :group => :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
