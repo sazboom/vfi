@@ -1,0 +1,23 @@
+- title "Drivers"
+
+%table
+  %tr
+    %th Name
+    %th Email
+    %th Street1
+    %th Street2
+    %th City
+    %th Zip
+  - for driver in @drivers
+    %tr
+      %td= driver.name
+      %td= driver.email
+      %td= driver.street1
+      %td= driver.street2
+      %td= driver.city
+      %td= driver.zip
+      %td= link_to 'Show', driver
+      %td= link_to 'Edit', edit_driver_path(driver)
+      %td= link_to 'Destroy', driver, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Driver", new_driver_path

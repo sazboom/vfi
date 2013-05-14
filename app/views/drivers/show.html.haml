@@ -1,0 +1,27 @@
+- title "Driver"
+
+%p
+  %strong Name:
+  = @driver.name
+%p
+  %strong Email:
+  = @driver.email
+%p
+  %strong Street1:
+  = @driver.street1
+%p
+  %strong Street2:
+  = @driver.street2
+%p
+  %strong City:
+  = @driver.city
+%p
+  %strong Zip:
+  = @driver.zip
+
+%p
+  = link_to "Edit", edit_driver_path(@driver)
+  |
+  = link_to "Destroy", @driver, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", drivers_path
