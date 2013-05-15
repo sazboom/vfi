@@ -38,4 +38,8 @@ class DriversController < ApplicationController
     @driver.destroy
     redirect_to drivers_url, :notice => "Successfully destroyed driver."
   end
+  
+  def calendar
+    @drivers = Driver.all
+  end
 end

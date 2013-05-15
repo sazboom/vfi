@@ -1,0 +1,6 @@
+- title "Calendar"
+
+=calendar @drivers, {:prev_text=>"prev", :next_text=>"next", empty_date: open_date } do |driver| 
+  %div= link_to driver.name, driver
+
+  

@@ -1,5 +1,7 @@
 Vfi::Application.routes.draw do
-  resources :drivers
+  resources :drivers do
+    get 'calendar'
+  end
 
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
